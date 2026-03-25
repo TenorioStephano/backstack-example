@@ -14,8 +14,8 @@ Follow these steps to contribute effectively:
 1. **Clone the repository**
 
    ```bash
-   git clone git@github.com:wnqueiroz/platform-engineering-backstack.git
-   cd platform-engineering-backstack
+   git clone git@github.com:TenorioStephano/backstack-example.git
+   cd https://github.com/TenorioStephano/backstack-example
    ```
 
 2. **Create a new branch** using the following naming convention:

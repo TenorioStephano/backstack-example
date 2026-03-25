@@ -20,6 +20,8 @@ extraEnvVars:
     value: "localhost"
   - name: LAMBDA_EXECUTOR
     value: "docker"
+  - name: LOCALSTACK_ACKNOWLEDGE_ACCOUNT_REQUIREMENT
+    value: "1"
 
 resources:
   limits:

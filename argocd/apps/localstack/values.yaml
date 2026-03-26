@@ -11,6 +11,10 @@ service:
       targetPort: 4566
       protocol: TCP
 
+env:
+  - name: LOCALSTACK_ACKNOWLEDGE_ACCOUNT_REQUIREMENT
+    value: "1"
+
 extraEnvVars:
   - name: SERVICES
     value: "s3,sqs,ec2,iam,lambda,dynamodb"

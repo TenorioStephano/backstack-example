@@ -9,6 +9,12 @@ spec:
     repoURL: https://localstack.github.io/helm-charts
     chart: localstack
     targetRevision: 0.6.7
+    env:
+      - name: LOCALSTACK_ACKNOWLEDGE_ACCOUNT_REQUIREMENT
+        value: "1"
+    extraEnvVars:
+      - name: LOCALSTACK_ACKNOWLEDGE_ACCOUNT_REQUIREMENT
+        value: "1"
     helm:
       releaseName: localstack
       valueFiles:

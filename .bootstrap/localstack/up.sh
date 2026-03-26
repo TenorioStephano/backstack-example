@@ -27,6 +27,7 @@ echo "Waiting for LocalStack Deployment to be created..."
 for i in {1..24}; do
     if kubectl get deployment/localstack -n "$NS" >/dev/null 2>&1; then
         echo "LocalStack Deployment found."
+        kubectl set env deployment/localstack LOCALSTACK_ACKNOWLEDGE_ACCOUNT_REQUIREMENT=1 -n localstack-system
         break
     fi
     echo "Deployment not found yet. Retrying in 5s..."
